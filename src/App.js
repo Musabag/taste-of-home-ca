@@ -60,7 +60,8 @@ const Home = ({ addToCart }) => {
       <div className="product-grid">
         {products.map((product) => (
           <div key={product.id} className="product-card">
-            <img src={product.image} alt={`Photo of ${product.name}`} className="product-image" style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '6px' }} />
+<img src={product.image} alt={product.name} className="product-image" style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '6px' }} />
+
             <h3>{product.name}</h3>
             <p>{product.description}</p>
             <p>${product.price.toFixed(2)}</p>
